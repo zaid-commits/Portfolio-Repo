@@ -1,0 +1,57 @@
+   /* Hide the navigation links by default on smaller screens */
+   /* nav.hidden {
+    display: none;
+  }
+   */
+  /* Style the hamburger menu button */
+  #nav-toggle {
+    cursor: pointer;
+  }
+
+  
+  /* Style the navigation links */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  /* Media query to show the navigation links when the screen size is larger */
+  @media (min-width: 768px) {
+    nav.hidden {
+      display: flex;
+    }
+  
+    #nav-toggle {
+      display: none;
+    }
+  }
+  
+  /* Style the navigation links */
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul li {
+  margin-left: 20px; /* Add margin to the left of each item */
+}
+
+/* Media query to show the navigation links when the screen size is larger */
+@media (min-width: 768px) {
+  nav.hidden {
+    display: flex;
+    justify-content: flex-end; /* Align the navbar to the right */
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+}
