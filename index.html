@@ -15,23 +15,25 @@
 
   <!-- Header -->
   <!-- Header -->
-<header class="bg-gray-900 text-white py-4 fixed w-full z-50">
-  <div class="container mx-auto flex justify-between items-center">
-    <a href="#" class="text-2xl font-bold">Zaid Rakhange</a>
-    <button id="nav-toggle" class="block md:hidden text-white">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="hidden md:block md:flex-grow md:items-center flex flex-col md:flex-row" id="navbar">
-      <ul class="md:flex md:flex-row">
-        <li><a href="#about" class="hover:text-teal-400 transition duration-300">About</a></li>
-        <li><a href="#skills" class="hover:text-teal-400 transition duration-300">Skills</a></li>
-        <li><a href="#projects" class="hover:text-teal-400 transition duration-300">Projects</a></li>
-        <li><a href="#achievements" class="hover:text-teal-400 transition duration-300">Achievements</a></li>
-        <li><a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header class="bg-gray-900 text-white py-4 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Zaid Rakhange</a>
+      <button id="nav-toggle" class="block md:hidden text-white">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="hidden md:block md:flex-grow md:items-center flex flex-col md:flex-row" id="navbar">
+        <ul class="md:flex md:flex-row">
+          <li><a href="#about" class="hover:text-teal-400 transition duration-300">About</a></li>
+          <li><a href="#skills" class="hover:text-teal-400 transition duration-300">Skills</a></li>
+          <li><a href="#projects" class="hover:text-teal-400 transition duration-300">Projects</a></li>
+          <li><a href="#achievements" class="hover:text-teal-400 transition duration-300">Achievements</a></li>
+          <li><a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
 
   
   <!-- Hero Section -->
@@ -49,21 +51,19 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="py-20" id="about">
+ <!-- About Section -->
+ <section class="py-20 bg-gray-100" id="about">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-4 text-gray-900 text-center">About Me</h2>
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3 mb-8 md:mb-0">
-          <img src="Images/img1.jpg" alt="Profile Picture" class="rounded-full mx-auto shadow-lg">
-        </div>
-        <div class="md:w-2/3 text-gray-700 text-center md:text-left">
+      <h2 class="text-center mb-8">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <img src="Images/img1.jpg" alt="Profile Picture" class="rounded-full mx-auto shadow-lg max-w-xs">
+        <div class="content mt-8 md:mt-0 md:ml-8">
           <p class="mb-4 text-lg leading-relaxed md:text-xl md:leading-loose">I'm Zaid Rakhange, a dedicated and enthusiastic full-stack developer on a mission to expand my programming skills and knowledge. I'm deeply passionate about creating innovative solutions and exploring new technologies to enhance user experiences. Outside of coding, I'm a competitive state-level volleyball player, where I've learned valuable lessons in teamwork, communication, and leadership. I believe these qualities translate well into my development work, allowing me to collaborate effectively and deliver exceptional results. I'm always looking to connect with like-minded individuals who share my passion for technology and sports. Whether it's discussing the latest tech trends or sharing volleyball strategies, I'm eager to engage in meaningful conversations and collaborate on exciting projects. Let's build something amazing together!</p>
+          <a href="#projects" class="btn">View Projects</a>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- Skills Section -->
   <section class="bg-gray-100 py-20" id="skills">
@@ -72,7 +72,6 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div class="bg-white p-6 rounded shadow-md">
           <i class="fab fa-html5 text-5xl 'text'-orange-500 mb-4"></i>
-          zaud
           <h3 class="text-xl font-bold mb-2 text-gray-900">HTML</h3>
           <p class="text-gray-700">Proficient in creating semantic and accessible HTML markup.</p>
         </div>

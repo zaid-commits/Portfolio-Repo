@@ -74,3 +74,24 @@ window.addEventListener('load', function() {
     }
   });
   
+
+
+//   document.getElementById('nav-toggle').addEventListener('click', function() {
+//     var menuOverlay = document.querySelector('.menu-overlay');
+//     menuOverlay.classList.toggle('hidden');
+//   });
+  
+//   window.addEventListener('click', function(event) {
+//     var menuOverlay = document.querySelector('.menu-overlay');
+//     if (event.target == menuOverlay) {
+//       menuOverlay.classList.add('hidden');
+//     }
+//   });
+
+
+  document.getElementById('nav-toggle').addEventListener('click', function() {
+    var mobileNav = document.getElementById('navbar');
+    mobileNav.classList.toggle('active');
+  });
+
+  
