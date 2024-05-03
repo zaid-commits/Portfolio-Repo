@@ -94,4 +94,24 @@ window.addEventListener('load', function() {
     mobileNav.classList.toggle('active');
   });
 
-  
+  // Fade-in Animation
+window.addEventListener('load', function() {
+  const elements = document.querySelectorAll('.fade-in');
+  elements.forEach(element => {
+    element.classList.add('visible');
+  });
+});
+
+// Scroll Animations
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+const elements = document.querySelectorAll('.slide-left');
+elements.forEach(element => {
+  observer.observe(element);
+});
