@@ -24,16 +24,12 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
-
-nav ul {
-  margin-left: auto; /* Push the navigation links to the right */
-}
-
 
 nav ul li {
   margin: 0 15px;
@@ -403,8 +399,8 @@ nav ul li a:hover::before {
   }
   nav {
       display: flex;
-      justify-content:space-between; /* Align the navbar to the right */
-      align-items:flex-end;
+      justify-content: flex-end; /* Align the navbar to the right */
+      align-items: center;
     }
   #about .content {
     max-width: 600px;
