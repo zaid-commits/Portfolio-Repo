@@ -24,9 +24,10 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between; /* This will push the hamburger to the left */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -398,7 +399,7 @@ nav ul li a:hover::before {
   }
   nav {
       display: flex;
-      justify-content: space-between; /* Align the navbar to the right */
+      justify-content: flex-end; /* Align the navbar to the right */
       align-items: center;
     }
   #about .content {
