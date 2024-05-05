@@ -115,3 +115,4 @@ const elements = document.querySelectorAll('.slide-left');
 elements.forEach(element => {
   observer.observe(element);
 });
+
