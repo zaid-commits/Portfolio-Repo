@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
     element.classList.add('fade-in');
   });
 });
-
+//zaid rakhange !
   
   // Smooth Scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
