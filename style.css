@@ -26,9 +26,14 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between; /* This will push the hamburger to the left */
+  justify-content: space-between;
   align-items: center;
 }
+
+nav ul {
+  margin-left: auto; /* Push the navigation links to the right */
+}
+
 
 nav ul li {
   margin: 0 15px;
@@ -398,8 +403,8 @@ nav ul li a:hover::before {
   }
   nav {
       display: flex;
-      justify-content: space-between; /* Align the navbar to the right */
-      align-items: center;
+      justify-content:space-between; /* Align the navbar to the right */
+      align-items:flex-end;
     }
   #about .content {
     max-width: 600px;
