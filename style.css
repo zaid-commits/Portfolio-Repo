@@ -10,7 +10,7 @@
 
 /* Change the text selection color for Firefox */
 ::-moz-selection {
-  background-color: black;
+  background-color: darkgrey;
   color: black;
 }
 
