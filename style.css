@@ -2,6 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Global Styles */
 
+/* Specify the width and height for the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of vertical scrollbar */
+  height: 10px; /* Height of horizontal scrollbar */
+}
+
+/* Specify the background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: rgba(26, 32, 44, 0.9);
+}
+
+/* Specify the appearance of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background:grey;
+  border-radius: 5px; /* Round corners of the thumb */
+}
+
+/* Specify the appearance of the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
 
 ::selection {
   background-color:darkgray;
@@ -25,6 +47,7 @@
     line-height: 1.6;
     background-color: #f8f8f8;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    scrollbar-3dlight-color: white;
   }
   
   /* Header */
@@ -46,6 +69,7 @@
   }
   
   nav ul {
+    padding-left: 370px;
     margin-left: auto; /* Push the navigation links to the right */
   }
   
@@ -132,7 +156,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
   }
   
   #about img {
@@ -147,14 +170,17 @@
     font-weight: 700;
     color: #333;
     margin-bottom: 30px;
+    
   }
+  
   
   #about p {
     max-width: 800px;
     font-size: 18px;
     color: #555;
     margin-bottom: 40px;
-    padding: 0 20px;
+    line-height: 1.6;
+    text-align:justify;
   }
   
   #about .btn {
@@ -171,7 +197,6 @@
   #about .btn:hover {
     background-color: #000;
   }
-  
   /* Skills Section */
   #skills {
     padding: 80px 0;
@@ -408,21 +433,17 @@
   @media (min-width: 768px) {
     #about .container {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: flex-start;
       text-align: left;
     }
   
     #about img {
       margin-bottom: 0;
-      margin-right: 60px;
     }
-    nav {
-        display: flex;
-        justify-content:space-between; /* Align the navbar to the right */
-        align-items:flex-end;
-      }
-    #about .content {
-      max-width: 600px;
+  
+    #about h2 {
+      text-align: left;
     }
   }
   
