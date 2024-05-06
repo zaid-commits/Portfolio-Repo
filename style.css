@@ -69,8 +69,10 @@
   }
   
   nav ul {
-    padding-left: 370px;
-    margin-left: auto; /* Push the navigation links to the right */
+    /* padding-left: 370px; */
+    /*this makes the page navvv*/
+    margin-left: auto; /*Push the navigation links to the right*/
+    /* margin-right: auto; Push the navigation links to the right */
   }
   
   
@@ -94,15 +96,28 @@
     position: absolute;
     top: 64px; /* Adjust this value based on your header height */
     left: 0;
-    width: 100%;
+    right: 0; /* Add this line */
+    width: 100vw; /* Change the width to 100vw (viewport width) */
     background-color: rgba(26, 32, 44, 0.9);
     padding: 1rem;
+    z-index: 999; /* Add a higher z-index value */
   }
   
   .show-nav li {
     margin-bottom: 1rem;
   }
   
+  .show-nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
   nav ul li a {
     display: block;
     padding: 10px 20px;
