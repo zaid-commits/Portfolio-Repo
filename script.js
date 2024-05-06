@@ -1,8 +1,8 @@
-document.getElementById('nav-toggle').addEventListener('click', function() {
-    var nav = document.querySelector('nav.hidden');
-    nav.classList.toggle('flex');
-    nav.classList.toggle('hidden');
-  });
+// document.getElementById('nav-toggle').addEventListener('click', function() {
+//     var nav = document.querySelector('nav.hidden');
+//     nav.classList.toggle('flex');
+//     nav.classList.toggle('hidden');
+//   });
   // Sticky Header
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
@@ -65,13 +65,9 @@ window.addEventListener('load', function() {
 
   const navToggle = document.getElementById('nav-toggle');
   const navbar = document.getElementById('navbar');
-
-  navToggle.addEventListener('click', function() {
-    if (navbar.style.display === 'none' || navbar.style.display === '') {
-      navbar.style.display = 'flex';
-    } else {
-      navbar.style.display = 'none';
-    }
+  
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show-nav');
   });
   
 
@@ -89,10 +85,10 @@ window.addEventListener('load', function() {
 //   });
 
 
-  document.getElementById('nav-toggle').addEventListener('click', function() {
-    var mobileNav = document.getElementById('navbar');
-    mobileNav.classList.toggle('active');
-  });
+  // document.getElementById('nav-toggle').addEventListener('click', function() {
+  //   var mobileNav = document.getElementById('navbar');
+  //   mobileNav.classList.toggle('active');
+  // });
 
   // Fade-in Animation
 window.addEventListener('load', function() {
@@ -118,10 +114,12 @@ elements.forEach(element => {
 
 
 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('nav ul');
+// const hamburger = document.querySelector('.hamburger');
+// const navMenu = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('show');
-});
+// hamburger.addEventListener('click', () => {
+//   hamburger.classList.toggle('active');
+//   navMenu.classList.toggle('show');
+// });
+
+

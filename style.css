@@ -77,6 +77,31 @@
   nav ul li {
     margin: 0 15px;
   }
+
+  
+  #nav-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    #nav-toggle {
+      display: block;
+    }
+  }
+  .show-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px; /* Adjust this value based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 32, 44, 0.9);
+    padding: 1rem;
+  }
+  
+  .show-nav li {
+    margin-bottom: 1rem;
+  }
   
   nav ul li a {
     display: block;
