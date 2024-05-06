@@ -123,3 +123,16 @@ elements.forEach(element => {
 // });
 
 
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  // Get the value of the user's name
+  const userName = document.getElementById("name").value;
+  
+  // Set the custom subject with the user's name
+  document.getElementById("Subject").value = `${userName} sent a message from your portfolio website`;
+  
+  // The rest of the code will execute after a short delay to allow the Subject value to be set
+  setTimeout(() => {
+      // Submit the form
+      document.getElementById("myForm").submit();
+  }, 100);
+});
