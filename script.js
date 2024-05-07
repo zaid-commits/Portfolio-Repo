@@ -128,5 +128,5 @@ elements.forEach(element => {
         const userName = document.getElementById("name").value;
         
         // Set the custom subject with the user's name
-        document.getElementById("Subject").value = `${userName} sent a message from your website`;
+        document.getElementById("Subject").value = `${userName} sent a message from your portfolio website`;
     });
