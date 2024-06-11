@@ -22,8 +22,9 @@
   <body>
     <header class="py-4 fixed w-full z-10 bg-black">
       <nav class="flex justify-between items-center">
-        <a href="#" class="text-daa520 font-bold text-lg ml-4">Zaid Rakhange</a>
+        <a href="#home" class="text-daa520 font-bold text-lg ml-4">Zaid Rakhange</a>
         <div class="hidden md:flex space-x-4 mr-4">
+          <a href="#hero" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#skills" class="nav-link">Skills</a>
           <a href="#projects" class="nav-link">Projects</a>
@@ -72,28 +73,32 @@
           I'm a talented developer with a passion for creating amazing websites
           and applications.
         </p>
-        <a
-          href="#about"
-          class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2"
-          >Learn More</a
-        >
+        <div class="hero-buttons">
+          <a
+            href="#about"
+            class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2"
+            >Learn More</a
+          >
+          <a target="_blank" href= "Images/Zaid Rakhange _Resume.pdf "
+            class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2"
+            >Download Resume</a
+          >
+        </div>
       </div>
     </section>
+    
 
     <!-- About Section -->
-    <section id="about" class="section-container">
+    <section id="about" class="section-container bg-black text-daa520">
       <h2 class="section-title">About Me</h2>
-      <div class="about">
-        <p>
-          I am Zaid, a front-end developer specializing in React. With a passion
-          for creating dynamic and responsive web applications, I focus on clean
-          code and user-friendly designs.
-        </p>
-        <p>
-          I have experience working on various projects, including a College
-          Management System, an Employee Management System, and a Notepad
-          Application using Java Swing.
-        </p>
+      <div class="about flex items-center justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+        <div class="about-image w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden">
+          <img src="Images/old.jpg" alt="Zaid Rakhange" class="w-full h-full object-cover" />
+        </div>
+        <div class="about-text max-w-lg text-center md:text-left">
+          <p class="text-lg">I am Zaid, a front-end developer specializing in React. With a passion for creating dynamic and responsive web applications, I focus on clean code and user-friendly designs.</p>
+          <p class="text-lg">I have experience working on various projects, including a College Management System, an Employee Management System, and a Notepad Application using Java Swing.</p>
+        </div>
       </div>
     </section>
 
@@ -136,7 +141,7 @@
       <h2 class="section-title">My Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 1" />
+          <img src="https://via.placeholder.com/400x200"  alt="Project 1" />
           <div class="overlay">
             <h3>College Management System</h3>
             <p>
@@ -201,15 +206,15 @@
       >
         <!-- Social Links -->
         <div class="flex space-x-4 mb-4 md:mb-0">
-          <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:engineering.zaidrakhange@gmail.com" class="social-link"
+          <a target="_blank" href="http://discordapp.com/users/1167472525589102645" class="social-link"><i class="fab fa-discord"></i></a>
+          <a target="_blank" href="https://instagram.com/zaid_suuiii" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="mailto:engineering.zaidrakhange@gmail.com" class="social-link"
             ><i class="far fa-envelope"></i
           ></a>
-          <a href="https://linkedin/zaidrakhange" class="social-link"
+          <a target="_blank" href= "https://linkedin/zaidrakhange" class="social-link"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://github.com/zaid-commits" class="social-link"
+          <a target="_blank" href="https://github.com/zaid-commits" class="social-link"
             ><i class="fab fa-github"></i
           ></a>
         </div>

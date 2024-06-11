@@ -12,6 +12,24 @@ body::-webkit-scrollbar-thumb {
   background-color: #DAA520;
   border-radius: 6px;
 }
+/* For small screens (e.g., phones) */
+@media only screen and (max-width: 600px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .hero-buttons a {
+    margin-bottom: 10px;
+    width: 60%; /* Make the buttons full width */
+  }
+}
 
 /* Hamburger Menu Styles */
 #toggle-menu {
