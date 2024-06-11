@@ -1,267 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Zaid's Portfolio</title>
-    <link rel="shortcut icon" href="Images/img2.jpg" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="py-4 fixed w-full z-10 bg-black">
-      <nav class="flex justify-between items-center">
-        <a href="#home" class="text-daa520 font-bold text-lg ml-4">Zaid Rakhange</a>
-        <div class="hidden md:flex space-x-4 mr-4">
-          <a href="#hero" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="md:hidden mr-4">
-          <button id="toggle-menu" class="focus:outline-none">
-            <svg class="h-5 w-5 fill-current text-daa520" viewBox="0 0 24 24">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-50"
-      >
-        <div class="flex justify-end px-4 py-2">
-          <button id="toggle-menu-close" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current text-daa520" viewBox="0 0 24 24">
-              <path
-                fill-rule="evenodd"
-                d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#hero" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title> Zaid's Portfolio</title>
+  <link rel="shortcut icon" href="Images/img2.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="py-4 fixed w-full z-10 bg-black">
+    <nav class="flex justify-between items-center">
+      <a href="#home" class="text-daa520 font-bold text-lg ml-4">Zaid Rakhange</a>
+      <div class="hidden md:flex space-x-4 mr-4">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
-    </header>
+      <div class="md:hidden mr-4">
+        <button id="toggle-menu" class="focus:outline-none">
+          <svg class="h-5 w-5 fill-current text-daa520" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-50">
+      <div class="flex justify-end px-4 py-2">
+        <button id="toggle-menu-close" class="focus:outline-none">
+          <svg class="h-6 w-6 fill-current text-daa520" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z" />
+          </svg>
+        </button>
+      </div>
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="hero-content">
-        <h1 class="animate-fade-in animate-typing"></h1>
-        <p class="animate-fade-in-delay">
-          I'm a talented developer with a passion for creating amazing websites
-          and applications.
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="animate-fade-in animate-typing"></h1>
+      <p class="animate-fade-in-delay">
+        I'm a talented developer with a passion for creating amazing websites
+        and applications.
+      </p>
+      <div class="hero-buttons">
+        <a href="#about"
+          class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2">Learn
+          More</a>
+        <a target="_blank" href="Images/Zaid Rakhange _Resume.pdf "
+          class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2">Download
+          Resume</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="section-container bg-black text-daa520">
+    <h2 class="section-title">About Me</h2>
+    <div class="about flex items-center justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+      <div class="about-image w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden">
+        <img src="Images/old.jpg" alt="Zaid Rakhange" class="w-full h-full object-cover" />
+      </div>
+      <div class="about-text max-w-lg text-center md:text-left">
+        <p class="text-lg">I am Zaid, a front-end developer specializing in React. With a passion for creating dynamic
+          and responsive web applications, I focus on clean code and user-friendly designs.</p>
+        <p class="text-lg">I have experience working on various projects, including a College Management System, an
+          Employee Management System, and a Notepad Application using Java Swing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-container bg-black text-daa520">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML/CSS</h3>
+        <p>
+          Expert in creating structured and styled web pages with HTML and
+          CSS.
         </p>
-        <div class="hero-buttons">
-          <a
-            href="#about"
-            class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2"
-            >Learn More</a
-          >
-          <a target="_blank" href= "Images/Zaid Rakhange _Resume.pdf "
-            class="bg-daa520 text-black py-2 px-4 rounded-md hover:bg-c69219 transition-colors duration-300 animate-fade-in-delay-2"
-            >Download Resume</a
-          >
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>
+          Proficient in JavaScript for creating interactive and dynamic web
+          applications.
+        </p>
+      </div>
+      <div class="skill-card">
+        <h3>React</h3>
+        <p>
+          Experienced in building responsive single-page applications with
+          React.
+        </p>
+      </div>
+      <div class="skill-card">
+        <h3>Java</h3>
+        <p>
+          Skilled in Java programming for building desktop applications and
+          server-side development.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section-container bg-black text-daa520">
+    <h2 class="section-title text-3xl font-bold mb-6">My Valueable Projects</h2>
+    <div class="initial-projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- First three projects go here -->
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img
+          src="https://socialify.git.ci/zaid-commits/Work-Tracker/image?description=1&descriptionEditable=A%20task%20and%20project%20management%20app%20to%20stay%20organized%20and%20productive.%20Features%20include%20task%20management%2C%20deadlines%2C%20and%20progress%20tracking.&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+          alt="Work Tracker" class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">Work Tracker</h3>
+        <p>A task and project management app to stay organized and productive.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
         </div>
       </div>
-    </section>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img
+          src="https://socialify.git.ci/zaid-commits/Tahajjud-Calculator/image?description=1&descriptionEditable=A%20web%20app%20for%20calculating%20Tahajjud%20prayer%20time%20based%20on%20Maghrib%20and%20Fajr%20Salah%20times.%20Set%20notifications%20and%20share%20calculated%20times.&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+          alt="Tahajjud Calculator" class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">Tahajjud Calculator</h3>
+        <p>A web app for calculating Tahajjud prayer time based on Maghrib and Fajr Salah times.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/Tahajjud-Calculator" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://dontmisstahajjud.netlify.app" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://socialify.git.ci/zaid-commits/Project-Showcase/image?description=1&descriptionEditable=A%20personalized%20portfolio%20web%20app%20to%20showcase%20projects%2C%20skills%2C%20and%20achievements%20for%20impressing%20potential%20employers%20or%20collaborators.&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Project Showcase"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">Project Showcase</h3>
+        <p>A platform to showcase various projects and their details.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/project-showcase" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://projectsofzaid.netlify.app" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+    </div>
+    <div class="additional-projects hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Remaining projects go here -->
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://via.placeholder.com/400x200" alt="RegalFire"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">RegalFire</h3>
+        <p>A website for a fire safety installation company.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/RegalFire" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://regalfire.netlify.app" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://via.placeholder.com/400x200" alt="Password Manager"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">Password Manager</h3>
+        <p>A secure tool for managing and storing passwords.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/Password-Manager" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://yourliveprojectlink.com/password-manager" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://via.placeholder.com/400x200" alt="Notepad Application"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">Notepad Application</h3>
+        <p>A simple and intuitive application for taking notes and organizing tasks.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/Notepad-Application" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://yourliveprojectlink.com/notepad-application" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://via.placeholder.com/400x200" alt="New Project 1"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">New Project 1</h3>
+        <p>A brief description of the new project 1.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/new-project-1" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://yourliveprojectlink.com/new-project-1" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+      <div class="project-card bg-black-800 p-6 rounded-lg text-center">
+        <img src="https://via.placeholder.com/400x200" alt="New Project 2"
+          class="w-full h-40 object-cover mb-4 rounded-lg" />
+        <h3 class="text-xl font-bold mb-2">New Project 2</h3>
+        <p>A brief description of the new project 2.</p>
+        <div class="mt-4">
+          <a href="https://github.com/zaid-commits/new-project-2" target="_blank"
+            class="btn-view-source bg-yellow-600 text-black py-2 px-4 rounded-lg mr-2">View Source</a>
+          <a href="https://yourliveprojectlink.com/new-project-2" target="_blank"
+            class="btn-view-live bg-yellow-600 text-black py-2 px-4 rounded-lg">View Live</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <button id="toggle-projects-btn" class="bg-yellow-600 text-black py-2 px-4 rounded-lg">Show More Projects</button>
+  </div>
     
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-container bg-black text-daa520">
-      <h2 class="section-title">About Me</h2>
-      <div class="about flex items-center justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-        <div class="about-image w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden">
-          <img src="Images/old.jpg" alt="Zaid Rakhange" class="w-full h-full object-cover" />
-        </div>
-        <div class="about-text max-w-lg text-center md:text-left">
-          <p class="text-lg">I am Zaid, a front-end developer specializing in React. With a passion for creating dynamic and responsive web applications, I focus on clean code and user-friendly designs.</p>
-          <p class="text-lg">I have experience working on various projects, including a College Management System, an Employee Management System, and a Notepad Application using Java Swing.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section-container bg-black text-daa520">
-      <h2 class="section-title">My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>HTML/CSS</h3>
-          <p>
-            Expert in creating structured and styled web pages with HTML and
-            CSS.
-          </p>
-        </div>
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>
-            Proficient in JavaScript for creating interactive and dynamic web
-            applications.
-          </p>
-        </div>
-        <div class="skill-card">
-          <h3>React</h3>
-          <p>
-            Experienced in building responsive single-page applications with
-            React.
-          </p>
-        </div>
-        <div class="skill-card">
-          <h3>Java</h3>
-          <p>
-            Skilled in Java programming for building desktop applications and
-            server-side development.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects" class="section-container">
-      <h2 class="section-title">My Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200"  alt="Project 1" />
-          <div class="overlay">
-            <h3>College Management System</h3>
-            <p>
-              A web application developed using Java and JavaFX for managing
-              college operations such as student records, course registrations,
-              and exam schedules.
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <img
-            src="https://via.placeholder.com/
-              400x200"
-            alt="Project 2"
-          />
-          <div class="overlay">
-            <h3>Employee Management System</h3>
-            <p>
-              An application developed in Java for managing employee
-              information, including attendance, payroll, and performance
-              evaluation.
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 3" />
-          <div class="overlay">
-            <h3>Notepad Application</h3>
-            <p>
-              A simple notepad application created using Java Swing for taking
-              notes and managing text documents.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-container bg-black text-daa520">
-      <h2 class="section-title">Get in Touch</h2>
-      <form action="https://formsubmit.co/engineering.zaidrakhange@gmail.com" method="POST" class="contact-form"/>
+  <!-- Contact Section -->
+  <section id="contact" class="section-container bg-black text-daa520">
+    <h2 class="section-title">Get in Touch</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="077a1a21-a547-40e9-a4dc-c724ec5fa3d9" />
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
-        <textarea
-          rows="4"
-          name="message"
-          placeholder="Message"
-          required
-        ></textarea>
+        <textarea rows="4" name="message" placeholder="Message" required></textarea>
         <button type="submit">Submit</button>
-      </form>
-    </section>
+    </form>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-black py-6 text-white" id="footer">
-      <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
-      >
-        <!-- Social Links -->
-        <div class="flex space-x-4 mb-4 md:mb-0">
-          <a target="_blank" href="http://discordapp.com/users/1167472525589102645" class="social-link"><i class="fab fa-discord"></i></a>
-          <a target="_blank" href="https://instagram.com/zaid_suuiii" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a target="_blank" href="mailto:engineering.zaidrakhange@gmail.com" class="social-link"
-            ><i class="far fa-envelope"></i
-          ></a>
-          <a target="_blank" href= "https://linkedin/zaidrakhange" class="social-link"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a target="_blank" href="https://github.com/zaid-commits" class="social-link"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-        <!-- Footer Text -->
-        <p class="text-sm">&copy; Zaid Rakhange. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-white" id="footer">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+      <!-- Social Links -->
+      <div class="flex space-x-4 mb-4 md:mb-0">
+        <a target="_blank" href="http://discordapp.com/users/1167472525589102645" class="social-link"><i
+            class="fab fa-discord"></i></a>
+        <a target="_blank" href="https://instagram.com/zaid_suuiii" class="social-link"><i
+            class="fab fa-instagram"></i></a>
+        <a target="_blank" href="mailto:engineering.zaidrakhange@gmail.com" class="social-link"><i
+            class="far fa-envelope"></i></a>
+        <a target="_blank" href="https://linkedin/zaidrakhange" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/zaid-commits" class="social-link"><i class="fab fa-github"></i></a>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <!-- Footer Text -->
+      <p class="text-sm">&copy; Zaid Rakhange. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- Include Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.js"></script>
+  <!-- Include Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.js"></script>
 
-    <!-- Hamburger Menu -->
-    <script>
-      const toggleMenu = document.getElementById("toggle-menu");
-      const mobileMenu = document.getElementById("mobile-menu");
-      toggleMenu.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+  <!-- Hamburger Menu -->
+  <script>
+    const toggleMenu = document.getElementById("toggle-menu");
+    const mobileMenu = document.getElementById("mobile-menu");
+    toggleMenu.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
 
-        document.addEventListener("DOMContentLoaded", () => {
-          const scrollLinks = document.querySelectorAll(".scroll-link");
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollLinks = document.querySelectorAll(".scroll-link");
 
-          scrollLinks.forEach((scrollLink) => {
-            scrollLink.addEventListener("click", (event) => {
-              event.preventDefault();
+        scrollLinks.forEach((scrollLink) => {
+          scrollLink.addEventListener("click", (event) => {
+            event.preventDefault();
 
-              const targetId = scrollLink.getAttribute("data-target");
-              const targetSection = document.getElementById(targetId);
+            const targetId = scrollLink.getAttribute("data-target");
+            const targetSection = document.getElementById(targetId);
 
-              if (targetSection) {
-                targetSection.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }
-            });
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
           });
         });
       });
+    });
 
-      const options = {
-        strings: ["Welcome to My Portfolio"],
-        typeSpeed: 50, // typing speed in milliseconds
-        startDelay: 500, // time before typing starts in milliseconds
-        showCursor: true, // display cursor
-        cursorChar: "|", // cursor character
-        autoInsertCss: true, // automatically insert CSS for cursor and fade-in
-      };
+    const options = {
+      strings: ["Welcome to My Portfolio"],
+      typeSpeed: 50, // typing speed in milliseconds
+      startDelay: 500, // time before typing starts in milliseconds
+      showCursor: true, // display cursor
+      cursorChar: "|", // cursor character
+      autoInsertCss: true, // automatically insert CSS for cursor and fade-in
+    };
 
-      const typed = new Typed(".animate-typing", options);
-    </script>
-  </body>
+    const typed = new Typed(".animate-typing", options);
+
+    const toggleProjectsButton = document.getElementById('toggle-projects');
+const additionalProjects = document.querySelectorAll('.additional-projects');
+
+if (toggleProjectsButton && additionalProjects) {
+  toggleProjectsButton.addEventListener('click', () => {
+    additionalProjects.forEach((additionalProject) => {
+      additionalProject.classList.toggle('hidden');
+    });
+  });
+}
+
+
+document.getElementById("toggle-projects-btn").addEventListener("click", function() {
+        const additionalProjects = document.querySelector(".additional-projects");
+        if (additionalProjects.classList.contains("hidden")) {
+            additionalProjects.classList.remove("hidden");
+            this.textContent = "Show Less Projects";
+        } else {
+            additionalProjects.classList.add("hidden");
+            this.textContent = "Show More Projects";
+        }
+    });
+  </script>
+</body>
+
 </html>

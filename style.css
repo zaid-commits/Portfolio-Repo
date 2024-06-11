@@ -264,9 +264,11 @@ body {
   .project-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    border: 2px solid #DAA520;
+
   }
   
   .project-card:hover {
@@ -418,6 +420,11 @@ footer {
   color: #DAA520;
 }
 
+
+/* extra projects */
+/* .additional-projects {
+  display: none;
+} */
 
 
 /* 
