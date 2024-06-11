@@ -85,15 +85,15 @@ body::-webkit-scrollbar-thumb {
   outline: none; /* Remove focus outline */
 }
 
-
 /* Base Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter';
     background-color: #000;
     color: #fff;
     font-size: 16px;
     margin: 0;
     padding: 0;
+    font-weight: 500;
     
   }
   
