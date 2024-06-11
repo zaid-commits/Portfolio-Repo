@@ -13,6 +13,60 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
+/* Hamburger Menu Styles */
+#toggle-menu {
+  cursor: pointer;
+  padding: 10px;
+  z-index: 20;
+}
+
+#toggle-menu svg {
+  fill: #DAA520; /* Gold color */
+  transition: fill 0.3s;
+}
+
+#toggle-menu:hover svg {
+  fill: #c69219; /* Darker gold color on hover */
+}
+/* Mobile Menu Styles */
+#mobile-menu {
+  background-color: rgb(151, 143, 143,1); /* Semi-transparent black background color */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+
+#mobile-menu.active {
+  transform: translateY(0); /* Show menu when active */
+}
+
+#mobile-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #fff; /* White text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#mobile-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background color on hover */
+}
+
+#mobile-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.75rem;
+}
+
+#mobile-menu button:focus {
+  outline: none; /* Remove focus outline */
+}
+
 
 /* Base Styles */
 body {
