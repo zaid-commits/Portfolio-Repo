@@ -30,6 +30,47 @@ body::-webkit-scrollbar-thumb {
     width: 60%; /* Make the buttons full width */
   }
 }
+/* glow effect on tahajjud */
+.border-animation {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.border-animation::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #3B82F6, #2563EB, #3B82F6);
+  animation: border-rotate 4s linear infinite;
+  z-index: -1;
+}
+
+.border-animation::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #000;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+@keyframes border-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* scrollbar */
 
 /* Hamburger Menu Styles */
 #toggle-menu {
