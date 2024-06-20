@@ -21,7 +21,44 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
 }
+.project-card {
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border: 1px solid #3B82F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
 
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2), 0 6px 6px rgba(59, 130, 246, 0.1);
+}
+
+.project-card h3 {
+  color: #3B82F6;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-card .tech-stack span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card .links a {
+  transition: color 0.3s ease;
+}
+
+.project-card .links a:hover {
+  color: #60A5FA;
+}
 .project-card {
   transition: opacity 0.3s ease;
 }
@@ -545,30 +582,3 @@ font-size: large;
   .skills-grid {
     grid-template-columns: repeat(auto
   
-
-             <!-- Add category dropdown -->
-          <div class="mb-8">
-            <select id="project-category" class="bg-gray-800 text-white p-2 rounded">
-              <option value="all">All Projects</option>
-              <option value="web-apps">Web Apps</option>
-              <option value="websites">Websites</option>
-              <option value="java-apps">Java Apps</option>
-              <option value="php-websites">PHP Websites</option>
-            </select>
-          </div>
-        
-          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Project cards go here -->
-            <!-- Example: -->
-            <div class="project-card" data-category="web-apps">
-              <!-- Project content -->
-            </div>
-            <!-- Repeat for other projects, adding the appropriate data-category -->
-          </div>
-        
-          <div class="text-center mt-8">
-            <button id="toggle-projects-btn" class="bg-3B82F6 hover:bg-2563EB text-white py-3 px-6 rounded">
-              Show More Projects
-            </button>
-          </div>
-        </section>
