@@ -1,58 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Zaid's Portfolio</title>
-  <link rel="shortcut icon" href="Images/img2.jpg" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>Zaid's Portfolio</title>
+    <link rel="shortcut icon" href="Images/img2.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-
-
-</head>
-<body>
-  <header class="py-6 fixed w-full z-10 bg-black">
-    <nav class="flex justify-between items-center">
-      <a href="#hero" class="text-3B82F6 font-bold text-xl ml-6">Zaid
-        Rakhange</a>
-      <div class="hidden md:flex space-x-6 mr-6">
-        <a href="#hero" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#work-experience" class="nav-link">Experience</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#accreditations" class="nav-link">Accreditations</a>
-        <a href="#blog" class="nav-link">Blogs</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <div class="md:hidden mr-6">
-        <button id="toggle-menu" class="focus:outline-none">
-          <svg class="h-6 w-6 fill-current text-3B82F6" viewBox="0 0 24 24">
-            <path fill-rule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z" />
-          </svg>
-        </button>
-      </div>
-    </nav>
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-50">
-      <div class="flex justify-end px-4 py-2">
-        <button id="toggle-menu-close" class="focus:outline-none">
-          <svg class="h-6 w-6 fill-current text-3B82F6" viewBox="0 0 24 24">
-            <path fill-rule="evenodd"
-              d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z" />
-          </svg>
-        </button>
-        <div class="px-4 pt-4 pb-8 space-y-2 sm:px-6">
+  </head>
+  <body>
+    <header class="py-6 fixed w-full z-10 bg-black">
+      <nav class="flex justify-between items-center">
+        <a href="#hero" class="text-3B82F6 font-bold text-xl ml-6">Zaid
+          Rakhange</a>
+        <div class="hidden md:flex space-x-6 mr-6">
           <a href="#hero" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#skills" class="nav-link">Skills</a>
@@ -62,293 +39,661 @@
           <a href="#accreditations" class="nav-link">Accreditations</a>
           <a href="#blog" class="nav-link">Blogs</a>
           <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="md:hidden mr-6">
+          <button id="toggle-menu" class="focus:outline-none">
+            <svg class="h-6 w-6 fill-current text-3B82F6" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu"
+        class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-50">
+        <div class="flex justify-end px-4 py-2">
+          <button id="toggle-menu-close" class="focus:outline-none">
+            <svg class="h-6 w-6 fill-current text-3B82F6" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z" />
+            </svg>
+          </button>
+          <div class="px-4 pt-4 pb-8 space-y-2 sm:px-6">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#work-experience" class="nav-link">Experience</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#accreditations" class="nav-link">Accreditations</a>
+            <a href="#blog" class="nav-link">Blogs</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </div>
         </div></header>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-          <div class="hero-content">
-            <h1 class="animate-fade-in animate-typing"></h1>
-            <p class="animate-fade-in-delay animate-typing">
-              I'm a talented developer with a passion for creating amazing websites
-              and applications.
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1 class="animate-fade-in animate-typing"></h1>
+          <p class="animate-fade-in-delay animate-typing">
+            I'm a talented developer with a passion for creating amazing
+            websites
+            and applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about"
+              class="bg-3B82F6 hover:bg-2563EB transition-colors duration-300 animate-fade-in-delay-2">Learn
+              More</a>
+            <a target="_blank" href="Images/Zaid Rakhange _Resume.pdf"
+              class="bg-3B82F6 hover:bg-2563EB transition-colors duration-300 animate-fade-in-delay-2">Download
+              Resume</a>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="section-container bg-black text-white">
+        <h2 class="section-title">About Me</h2>
+        <div
+          class="about flex items-center justify-center flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10">
+          <div
+            class="about-image w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden">
+            <img src="Images/old.jpg" alt="Zaid Rakhange"
+              class="w-full h-full object-cover" />
+          </div>
+          <div class="about-text max-w-lg text-center md:text-left">
+            <p class="text-lg">
+              I am Zaid, a front-end developer specializing in React. With a
+              passion for creating dynamic and responsive web applications, I
+              focus on clean code and user-friendly designs.
             </p>
-            <div class="hero-buttons">
-              <a href="#about"
-                class="bg-3B82F6 hover:bg-2563EB transition-colors duration-300 animate-fade-in-delay-2">Learn
-                More</a>
-              <a target="_blank" href="Images/Zaid Rakhange _Resume.pdf"
-                class="bg-3B82F6 hover:bg-2563EB transition-colors duration-300 animate-fade-in-delay-2">Download
-                Resume</a>
+            <p class="text-lg">
+              I have experience working on various projects, including a College
+              Management System, an Employee Management System, and a Notepad
+              Application using Java Swing.
+            </p>
+            <a id="more" href="about.html">Read More About me --></a>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12">My Skills</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- HTML/CSS Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">HTML/CSS</h3>
+              </div>
+              <p class="text-gray-400">Expert in creating structured and styled web pages with HTML and CSS.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-blue-400">95%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- JavaScript Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">JavaScript</h3>
+              </div>
+              <p class="text-gray-400">Proficient in JavaScript for creating interactive and dynamic web applications.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-yellow-400">90%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- React Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">React</h3>
+              </div>
+              <p class="text-gray-400">Experienced in building responsive single-page applications with React.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-blue-400">85%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-blue-400 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Java Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">Java</h3>
+              </div>
+              <p class="text-gray-400">Skilled in Java programming for building desktop applications and server-side development.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-red-400">80%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-red-500 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Git/GitHub Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="500">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22l-4-4 4-4m4 4h3M4 4h16v16H4z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">Git/GitHub</h3>
+              </div>
+              <p class="text-gray-400">Proficient in version control and collaboration using Git and GitHub.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-purple-400">90%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-purple-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- PHP Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l4 4-4 4-4-4z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">PHP</h3>
+              </div>
+              <p class="text-gray-400">Experienced in server-side scripting and web development using PHP.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-indigo-400">85%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-indigo-500 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Python Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="700">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15l9 6 9-6-9-6-9 6z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">Python</h3>
+              </div>
+              <p class="text-gray-400">Learning Python to create automated tools that save time, especially for hackers.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-green-400">70%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tailwind CSS Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="800">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v18l7-3 7 3V3M5 8l7-3 7 3"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+              </div>
+              <p class="text-gray-400">Proficient in using Tailwind CSS for building modern and responsive designs.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-teal-400">85%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-white h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Bootstrap Skill -->
+            <div class="bg-gray-800 rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="900">
+              <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 mr-3 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l-6-6h4V4h4v10h4l-6 6z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">Bootstrap</h3>
+              </div>
+              <p class="text-gray-400">Experienced in using Bootstrap for developing responsive web applications.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-pink-400">90%</div>
+                <div class="w-2/3 bg-gray-700 rounded-full h-2">
+                  <div class="bg-pink-500 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      <section id="projects" class="section-container bg-black text-white">
+        <h2 class="section-title text-3xl font-bold mb-8">
+          My Valuable Projects
+        </h2>
+
+        <!-- Category dropdown -->
+        <div class="mb-8">
+          <select id="project-category"
+            class="bg-gray-800 text-white p-2 rounded">
+            <option value="all">All Projects</option>
+            <option value="web-apps">Web Apps</option>
+            <option value="websites">Websites</option>
+            <option value="java-apps">Java Apps</option>
+            <option value="php-websites">PHP Websites</option>
+          </select>
+        </div>
+
+        <div id="projects-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Url Shortener -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/url-shortener/image?description=1&descriptionEditable=A%20simple%20and%20efficient%20URL%20shortener%20application%20that%20generates%20shorter%20versions%20of%20long%20URLs%20for%20easy%20sharing%20and%20management.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="Url Shortener"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Url Shortener</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">A URL shortener
+                that converts long URLs into short, manageable links for easy
+                sharing.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-blue-500 text-xs font-semibold text-white px-2 py-1 rounded-full">React</span>
+                  <span
+                    class="bg-green-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Node.js</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/Work-Tracker"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <a href="https://github.com/zaid-commits/Work-Tracker"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" /></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- About Section -->
-        <section id="about" class="section-container bg-black text-white" >
-          <h2 class="section-title">About Me</h2>
-          <div class="about flex items-center justify-center flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10">
-            <div class="about-image w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden">
-              <img src="Images/old.jpg" alt="Zaid Rakhange" class="w-full h-full object-cover" />
+
+          <!-- Tahajjud Calculator -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/Tahajjud-Calculator/image?description=1&descriptionEditable=Tahajjud%20Time%20Calculator%20is%20a%20web%20application%20that%20helps%20you%20calculate%20the%20Tahajjud%20prayer%20time%20based%20on%20Maghrib%20and%20Fajr%20Salah%20times.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="Tahajjud Calculator"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
             </div>
-            <div class="about-text max-w-lg text-center md:text-left">
-              <p class="text-lg">
-                I am Zaid, a front-end developer specializing in React. With a
-                passion for creating dynamic and responsive web applications, I
-                focus on clean code and user-friendly designs.
-              </p>
-              <p class="text-lg">
-                I have experience working on various projects, including a College
-                Management System, an Employee Management System, and a Notepad
-                Application using Java Swing.
-              </p>
-              <a id="more" href="#">Read More About me --></a>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Tahajjud
+                Calculator</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">A web app for
+                calculating Tahajjud prayer time based on Maghrib and Fajr Salah
+                times.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-yellow-500 text-xs font-semibold text-white px-2 py-1 rounded-full">JavaScript</span>
+                  <span
+                    class="bg-red-500 text-xs font-semibold text-white px-2 py-1 rounded-full">HTML/CSS</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/Tahajjud-Calculator"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <a href="https://dontmisstahajjud.netlify.app" target="_blank"
+                    class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" /></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- Skills Section -->
-        <section id="skills" class="section-container bg-black text-white" >
-          <h2 class="section-title">My Skills</h2>
-          <div class="skills-grid" data-aos="fade-up" data-aos-delay="10">
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="10">
-              <h3>HTML/CSS</h3>
-              <p>
-                Expert in creating structured and styled web pages with HTML and
-                CSS.
-              </p>
+
+          <!-- Project Showcase -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="websites" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/Project-Showcase/image?description=1&descriptionEditable=A%20web%20app%20highlighting%20your%20projects%2C%20skills%2C%20and%20achievements%2C%20designed%20to%20impress%20potential%20collaborators.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="Project Showcase"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
             </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="10">
-              <h3>JavaScript</h3>
-              <p>
-                Proficient in JavaScript for creating interactive and dynamic web
-                applications.
-              </p>
-            </div>
-            <div class="skill-card"data-aos="fade-up" data-aos-delay="10">
-              <h3>React</h3>
-              <p>
-                Experienced in building responsive single-page applications with
-                React.
-              </p>
-            </div>
-            <div class="skill-card"data-aos="fade-up" data-aos-delay="10">
-              <h3>Java</h3>
-              <p>
-                Skilled in Java programming for building desktop applications and
-                server-side development.
-              </p>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Project
+                Showcase</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">Zaid's project
+                showcase featuring interactive examples of web development,
+                design, and programming skills.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-purple-500 text-xs font-semibold text-white px-2 py-1 rounded-full">React</span>
+                  <span
+                    class="bg-blue-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Tailwind
+                    CSS</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/Project-Showcase"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <a href="https://projectsofzaid.netlify.app" target="_blank"
+                    class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" /></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        <section id="projects" class="section-container bg-black text-white">
-          <h2 class="section-title text-3xl font-bold mb-8">
-            My Valuable Projects
-          </h2>
-          
-          <!-- Category dropdown -->
-          <div class="mb-8">
-            <select id="project-category" class="bg-gray-800 text-white p-2 rounded">
-              <option value="all">All Projects</option>
-              <option value="web-apps">Web Apps</option>
-              <option value="websites">Websites</option>
-              <option value="java-apps">Java Apps</option>
-              <option value="php-websites">PHP Websites</option>
-            </select>
+
+          <!-- RegalFire -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="websites" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/Regal-Fire/image?description=1&descriptionEditable=This%20repository%20hosts%20Regal%20Fire%27s%20website%20source%20code%2C%20highlighting%20their%20services%20and%20expertise%20with%20a%20modern%20design.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="RegalFire"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">RegalFire</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">A website for a
+                fire safety installation company.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-red-500 text-xs font-semibold text-white px-2 py-1 rounded-full">HTML/CSS</span>
+
+                  <span
+                    class="bg-yellow-500 text-xs font-semibold text-white px-2 py-1 rounded-full">JavaScript</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/RegalFire"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <a href="https://regalfire.netlify.app" target="_blank"
+                    class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        
-          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Web Apps -->
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden" data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
-              <img src="https://socialify.git.ci/zaid-commits/url-shortener/image?description=1&descriptionEditable=A%20simple%20and%20efficient%20URL%20shortener%20application%20that%20generates%20shorter%20versions%20of%20long%20URLs%20for%20easy%20sharing%20and%20management.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Url Shortener" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">Url Shortener</h3>
-                <p class="text-gray-400 mb-4">A URL shortener that converts long URLs into short, manageable links for easy sharing.</p>
-                <div class="mt-4">
-                  <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded mr-2">View Source</a>
-                  <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">View Live</a>
+
+          <!-- Notepad Application -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="java-apps" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/Notepad-JavaApplication/image?description=1&descriptionEditable=This%20Java%20program%20is%20a%20text%20editor%20using%20Swing%20components.%20It%20supports%20creating%2C%20opening%2C%20saving%2C%20printing%20files%2C%20and%20basic%20text%20editing.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="Notepad Application"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Notepad
+                Application</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">A simple and
+                intuitive application for taking notes and organizing tasks.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-orange-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Java</span>
+                  <span
+                    class="bg-blue-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Swing</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/Notepad-Application"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <!-- No live demo link for this project -->
                 </div>
               </div>
             </div>
-        
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden" data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
-              <img src="https://socialify.git.ci/zaid-commits/Tahajjud-Calculator/image?description=1&descriptionEditable=A%20web%20app%20for%20calculating%20Tahajjud%20prayer%20time%20based%20on%20Maghrib%20and%20Fajr%20Salah%20times.%20Set%20notifications%20and%20share%20calculated%20times.&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Tahajjud Calculator" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">Tahajjud Calculator</h3>
-                <p class="text-gray-400 mb-4">A web app for calculating Tahajjud prayer time based on Maghrib and Fajr Salah times.</p>
-                <div class="mt-4">
-                  <a href="https://github.com/zaid-commits/Tahajjud-Calculator" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded mr-2">View Source</a>
-                  <a href="https://dontmisstahajjud.netlify.app" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">View Live</a>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Websites -->
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden" data-category="websites" data-aos="fade-up" data-aos-delay="10">
-              <img src="https://socialify.git.ci/zaid-commits/Project-Showcase/image?description=1&descriptionEditable=A%20web%20app%20highlighting%20your%20projects%2C%20skills%2C%20and%20achievements%2C%20designed%20to%20impress%20potential%20collaborators.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Project Showcase" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">Project Showcase</h3>
-                <p class="text-gray-400 mb-4">Zaid's project showcase featuring interactive examples of web development, design, and programming skills.</p>
-                <div class="mt-4">
-                  <a href="https://github.com/zaid-commits/Project-Showcase" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded mr-2">View Source</a>
-                  <a href="https://projectsofzaid.netlify.app" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">View Live</a>
-                </div>
-              </div>
-            </div>
-        
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden" data-category="websites" data-aos="fade-up" data-aos-delay="10">
-              <img src="https://socialify.git.ci/zaid-commits/Regal-Fire/image?description=1&descriptionEditable=This%20repository%20hosts%20Regal%20Fire%27s%20website%20source%20code%2C%20highlighting%20their%20services%20and%20expertise%20with%20a%20modern%20design.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="RegalFire" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">RegalFire</h3>
-                <p class="text-gray-400 mb-4">A website for a fire safety installation company.</p>
-                <div class="mt-4">
-                  <a href="https://github.com/zaid-commits/RegalFire" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded mr-2">View Source</a>
-                  <a href="https://regalfire.netlify.app" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">View Live</a>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Java Apps -->
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden" data-category="java-apps" data-aos="fade-up" data-aos-delay="10">
-              <img src="https://socialify.git.ci/zaid-commits/Notepad-JavaApplication/image?description=1&descriptionEditable=This%20Java%20program%20is%20a%20text%20editor%20using%20Swing%20components.%20It%20supports%20creating%2C%20opening%2C%20saving%2C%20printing%20files%2C%20and%20basic%20text%20editing.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Notepad Application" class="w-full h-48 object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">Notepad Application</h3>
-                <p class="text-gray-400 mb-4">A simple and intuitive application for taking notes and organizing tasks.</p>
-                <div class="mt-4">
-                  <a href="https://github.com/zaid-commits/Notepad-Application" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded mr-2">View Source</a>
-                  <a href="#" target="_blank" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">View Demo</a>
-                </div>
-              </div>
-            </div>
-        
-            <!-- PHP Websites -->
-            <div class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105" data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
-              <div class="relative overflow-hidden">
-                <img src="https://socialify.git.ci/zaid-commits/url-shortener/image?description=1&descriptionEditable=A%20simple%20and%20efficient%20URL%20shortener%20application%20that%20generates%20shorter%20versions%20of%20long%20URLs%20for%20easy%20sharing%20and%20management.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="Url Shortener" class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <span class="text-white text-lg font-bold">View Project</span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2 text-white">Url Shortener</h3>
-                <p class="text-gray-400 mb-4 h-20 overflow-hidden">A URL shortener that converts long URLs into short, manageable links for easy sharing.</p>
-                <div class="flex justify-between items-center mt-4">
-                  <div class="flex space-x-2">
-                    <span class="bg-blue-500 text-xs font-semibold text-white px-2 py-1 rounded-full">React</span>
-                    <span class="bg-green-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Node.js</span>
-                  </div>
-                  <div class="flex space-x-2">
-                    <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank" class="text-3B82F6 hover:text-2563EB">
-                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg style>
-                    </a>
-                    <a href="https://github.com/zaid-commits/Work-Tracker" target="_blank" class="text-3B82F6 hover:text-2563EB">
-                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
           </div>
-        
-          
-        </section>
-                    <section id="work-experience" class="py-16 bg-black text-white">
-                      <div class="container mx-auto px-4">
-                        <h2 class="text-3xl font-bold text-center text-3B82F6 mb-10">Work Experience</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up" data-aos-delay="10">
-                          <!-- Job Position 1 -->
-                          <div class="bg-gray-900 rounded-lg shadow-md p-8 border-2 border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">Frontend Developer</h3><p class="text-gray-300 mb-4">Forbid Fire - Vashi</p>
-                            <p class="text-gray-300 mb-4">June 2024 - Present</p>
-                            <ul class="list-disc list-inside text-gray-300 mb-6">
-                              <li>Developed responsive and user-friendly interfaces for web applications using HTML, CSS, and JavaScript.
-                              </li>
-                              <li>Collaborated with design and backend teams to implement new features and enhance existing functionality.
-                              </li>
-                              <li>Optimized website performance and accessibility following best practices and standards.</li>
-                            </ul>
-                            <a href="#" class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">
-                              Download Certificate
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <section id="services" class="py-16 bg-gray-900 text-white" >
-                      <div class="container mx-auto px-4">
-                        <h2 class="text-3xl font-bold text-center text-3B82F6 mb-10">Our
-                          Services</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                          <!-- Website Development Service -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
-                              Development</h3>
-                            <p class="text-gray-300 mb-6">We create custom, responsive websites
-                              tailored to your business needs, using the latest technologies and
-                              best practices.</p>
-                            <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
-                              Service</a>
-                          </div>
-                          <!-- Website Maintenance Service -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
-                              Maintenance</h3>
-                            <p class="text-gray-300 mb-6">Our maintenance services ensure your
-                              website remains up-to-date, secure, and running smoothly, with
-                              regular updates and backups.</p>
-                            <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
-                              Service</a>
-                          </div>
-                          <!-- Website Redesign Service -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
-                              Redesign</h3>
-                            <p class="text-gray-300 mb-6">We revamp your existing website to
-                              enhance its aesthetics, functionality, and user experience,
-                              keeping it aligned with current trends.</p>
-                            <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
-                              Service</a>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <section id="accreditations" class="py-16 bg-gray-900 text-white">
-                      <div class="container mx-auto px-4">
-                        <h2 class="text-3xl font-bold text-center text-3B82F6 mb-10">Accreditations</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"data-aos="fade-up" data-aos-delay="10">
-                          <!-- Accreditation 1 -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6"data-aos="fade-up" data-aos-delay="50">ISO
-                              9001:2015</h3>
-                            <p class="text-gray-300 mb-6">Certified for maintaining quality
-                              management systems that meet international standards.</p>
-                            <a href="#" class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
-                              Certificate</a>
-                          </div>
-                          <!-- Accreditation 2 -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">NFPA Member</h3>
-                            <p class="text-gray-300 mb-6">Member of the National Fire Protection
-                              Association, adhering to fire safety standards and codes.</p>
-                            <a href="#" class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
-                              Certificate</a>
-                          </div>
-                          <!-- Accreditation 3 -->
-                          <div class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"data-aos="fade-up" data-aos-delay="10">
-                            <h3 class="text-2xl font-bold mb-4 text-3B82F6">UL Listed</h3>
-                            <p class="text-gray-300 mb-6">Products and services have been tested
-                              and meet the safety standards set by Underwriters
-                              Laboratories.</p>
-                            <a href="#" class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
-                              Certificate</a>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <section id="blog" class="py-12 bg-black">
-                      <div class="container mx-auto px-4">
-                        <h2 class="text-3xl font-bold text-center text-gold-500 mb-8">Blogs</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="10">
-                          <!-- Blog Post 1 -->
-                          <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+
+          <!-- Work Tracker (Additional project) -->
+          <div
+            class="project-card bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-category="web-apps" data-aos="fade-up" data-aos-delay="10">
+            <div class="relative overflow-hidden">
+              <img
+                src="https://socialify.git.ci/zaid-commits/Work-Tracker/image?description=1&descriptionEditable=A%20task%20and%20project%20tracking%20app%20that%20manages%20tasks%2C%20sets%20deadlines%2C%20and%20monitors%20progress%2C%20enhancing%20organization%20and%20productivity.&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark"
+                alt="Work Tracker"
+                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white text-lg font-bold">View Project</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Work Tracker</h3>
+              <p class="text-gray-400 mb-4 h-20 overflow-hidden">A web
+                application for tracking work hours and managing tasks
+                efficiently.</p>
+              <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-blue-500 text-xs font-semibold text-white px-2 py-1 rounded-full">React</span>
+                  <span
+                    class="bg-green-500 text-xs font-semibold text-white px-2 py-1 rounded-full">Node.js</span>
+                  <span
+                    class="bg-yellow-500 text-xs font-semibold text-white px-2 py-1 rounded-full">MongoDB</span>
+                </div>
+                <div class="flex space-x-2">
+                  <a href="https://github.com/zaid-commits/Work-Tracker"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                  </a>
+                  <a href="https://work-tracker-demo.netlify.app"
+                    target="_blank" class="text-3B82F6 hover:text-2563EB">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"><path
+                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="work-experience" class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-3B82F6 mb-10">Work
+            Experience</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up"
+            data-aos-delay="10">
+            <!-- Job Position 1 -->
+            <div
+              class="bg-gray-900 rounded-lg shadow-md p-8 border-2 border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">Frontend
+                Developer</h3><p class="text-gray-300 mb-4">Forbid Fire -
+                Vashi</p>
+              <p class="text-gray-300 mb-4">June 2024 - Present</p>
+              <ul class="list-disc list-inside text-gray-300 mb-6">
+                <li>Developed responsive and user-friendly interfaces for web
+                  applications using HTML, CSS, and JavaScript.
+                </li>
+                <li>Collaborated with design and backend teams to implement new
+                  features and enhance existing functionality.
+                </li>
+                <li>Optimized website performance and accessibility following
+                  best practices and standards.</li>
+              </ul>
+              <a href="#"
+                class="bg-3B82F6 hover:bg-2563EB text-white py-2 px-4 rounded">
+                Download Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-3B82F6 mb-10">Our
+            Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Website Development Service -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
+                Development</h3>
+              <p class="text-gray-300 mb-6">We create custom, responsive
+                websites
+                tailored to your business needs, using the latest technologies
+                and
+                best practices.</p>
+              <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
+                Service</a>
+            </div>
+            <!-- Website Maintenance Service -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
+                Maintenance</h3>
+              <p class="text-gray-300 mb-6">Our maintenance services ensure your
+                website remains up-to-date, secure, and running smoothly, with
+                regular updates and backups.</p>
+              <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
+                Service</a>
+            </div>
+            <!-- Website Redesign Service -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">Website
+                Redesign</h3>
+              <p class="text-gray-300 mb-6">We revamp your existing website to
+                enhance its aesthetics, functionality, and user experience,
+                keeping it aligned with current trends.</p>
+              <a href="#" class="text-3B82F6 hover:text-2563EB">Explore
+                Service</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="accreditations" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl font-bold text-center text-3B82F6 mb-10">Accreditations</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            data-aos="fade-up" data-aos-delay="10">
+            <!-- Accreditation 1 -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6" data-aos="fade-up"
+                data-aos-delay="50">ISO
+                9001:2015</h3>
+              <p class="text-gray-300 mb-6">Certified for maintaining quality
+                management systems that meet international standards.</p>
+              <a href="#"
+                class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
+                Certificate</a>
+            </div>
+            <!-- Accreditation 2 -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">NFPA Member</h3>
+              <p class="text-gray-300 mb-6">Member of the National Fire
+                Protection
+                Association, adhering to fire safety standards and codes.</p>
+              <a href="#"
+                class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
+                Certificate</a>
+            </div>
+            <!-- Accreditation 3 -->
+            <div
+              class="bg-gray-800 rounded-lg shadow-md p-8 border border-3B82F6"
+              data-aos="fade-up" data-aos-delay="10">
+              <h3 class="text-2xl font-bold mb-4 text-3B82F6">UL Listed</h3>
+              <p class="text-gray-300 mb-6">Products and services have been
+                tested
+                and meet the safety standards set by Underwriters
+                Laboratories.</p>
+              <a href="#"
+                class="inline-block mt-4 text-3B82F6 hover:text-2563EB">Download
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="py-12 bg-black">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-3xl font-bold text-center text-gold-500 mb-8">Blogs</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            data-aos="fade-up" data-aos-delay="10">
+            <!-- Blog Post 1 -->
+            <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xi_VY54V535hztHz11VTyQHaFL%26pid%3DApi&f=1&ipt=6b85fdc209eb42a414c5e658c4d55323ea3d92320e2a4ba053e46ea9aefa08bd&ipo=images" alt="Blog Post 1" class="w-full h-48 object-cover" />
                             <div class="p-6">
                               <h3 class="text-xl font-bold mb-2 text-white">How to Get Started with Web Development</h3>
@@ -356,17 +701,24 @@
                               <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
                             </div>
                           </div> -->
-                          <!-- Blog Post 2 -->
-                          <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                            <img src="https://www.biztechcs.com/wp-content/uploads/2024/01/10-Most-Popular-Javascript-Frameworks-To-Consider-in-2024-1-jpg.webp" alt="Blog Post 2" class="w-full h-48 object-cover" />
-                            <div class="p-6">
-                              <h3 class="text-xl font-bold mb-2 text-white">Top 10 JavaScript Frameworks in 2024</h3>
-                              <p class="text-gray-400 mb-4">Explore the most popular JavaScript frameworks to use in 2024 and their key features.</p>
-                              <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
-                            </div>
-                          </div>
-                          <!-- Blog Post 3 -->
-                          <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+            <!-- Blog Post 2 -->
+            <div
+              class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+              <img
+                src="https://www.biztechcs.com/wp-content/uploads/2024/01/10-Most-Popular-Javascript-Frameworks-To-Consider-in-2024-1-jpg.webp"
+                alt="Blog Post 2" class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-white">Top 10 JavaScript
+                  Frameworks in 2024</h3>
+                <p class="text-gray-400 mb-4">Explore the most popular
+                  JavaScript frameworks to use in 2024 and their key
+                  features.</p>
+                <a href="#" class="text-gold-500 hover:text-gold-700">Read
+                  More</a>
+              </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.y-m9p-2OBEnGFFh6ejOLNgHaEK%26pid%3DApi&f=1&ipt=5f3242bf0d0332f8b7552b564b1050e744f266f9f106921d9659a2be7fc8f429&ipo=images" alt="Blog Post 3" class="w-full h-48 object-cover" />
                             <div class="p-6">
                               <h3 class="text-xl font-bold mb-2 text-white">Understanding CSS Grid Layout</h3>
@@ -374,8 +726,8 @@
                               <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
                             </div>
                           </div> -->
-                          <!-- Blog Post 4 -->
-                          <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+            <!-- Blog Post 4 -->
+            <!-- <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.SzWRhRPOScvm4AjTLXaQggHaHa%26pid%3DApi&f=1&ipt=8a21227a430dc3cf214206f93bbd6831685a712e948d81492da9223616a5bd0a&ipo=images" alt="Blog Post 4" class="w-full h-48 object-cover" />
                             <div class="p-6">
                               <h3 class="text-xl font-bold mb-2 text-white">The Importance of Web Accessibility</h3>
@@ -383,65 +735,97 @@
                               <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
                             </div>
                           </div> -->
-                          <!-- Blog Post 5 -->
-                          <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmastertej.com%2Fwp-content%2Fuploads%2F2021%2F01%2Fmobile-responsive-design-example.jpg&f=1&nofb=1&ipt=c6f09887fc00261448ca9506f815c98ca9f087df5682a348a167834ddd2d1801&ipo=images" alt="Blog Post 5" class="w-full h-48 object-cover" />
-                            <div class="p-6">
-                              <h3 class="text-xl font-bold mb-2 text-white">Building Responsive Websites with Tailwind CSS</h3>
-                              <p class="text-gray-400 mb-4">Tips and tricks for creating responsive websites using Tailwind CSS.</p>
-                              <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
-                            </div>
-                          </div>
-                          <!-- Blog Post 6 -->
-                          <div class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Uk-MBTLEXZEQgJf_Y4D8JwHaEK%26pid%3DApi&f=1&ipt=cffbe55ff7d638c0d5b35ef5f873de8be9ca65ccecaac0bbc9caa5e3f0255b23&ipo=images" alt="Blog Post 6" class="w-full h-48 object-cover" />
-                            <div class="p-6">
-                              <h3 class="text-xl font-bold mb-2 text-white">Getting Started with React Hooks</h3>
-                              <p class="text-gray-400 mb-4">An introduction to React Hooks and how to use them effectively in your projects.</p>
-                              <a href="#" class="text-gold-500 hover:text-gold-700">Read More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="newsletter-signup bg-gray-900 rounded-lg p-6 mb-8" style="margin-top: 3%;" data-aos="fade-up" data-aos-delay="10" id="news">
-                          <h3 class="text-2xl font-bold text-gold-500 mb-4">Subscribe to our Newsletter</h3>
-                          <form id="newsletterForm" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="077a1a21-a547-40e9-a4dc-c724ec5fa3d9" />
-                            <input type="hidden" name="subject" value="" id="subjectField" />
-                            <input type="hidden" name="from_name" value="Zaid's Portfolio" />
-                            <input type="hidden" name="redirect" value="https://zaidcreates.netlify.app/#news" />
-                            <input type="email" name="email" class="bg-gray-800 text-white p-2 rounded mb-4 w-full" placeholder="Your Email" required />
-                            <button type="submit" class="bg-gold-500 hover:bg-gold-700 text-gray-300 py-2 px-4 rounded">Subscribe</button>
-                          </form>
-                        </div>
-                      </div>
-                    </section>
-                    
-                            <!-- Contact Section -->
-    <section id="contact" class="section-container bg-black text-daa520">
-           <h2 class="section-title">Get connected with me</h2>
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="077a1a21-a547-40e9-a4dc-c724ec5fa3d9" />
+            <!-- Blog Post 5 -->
+            <div
+              class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmastertej.com%2Fwp-content%2Fuploads%2F2021%2F01%2Fmobile-responsive-design-example.jpg&f=1&nofb=1&ipt=c6f09887fc00261448ca9506f815c98ca9f087df5682a348a167834ddd2d1801&ipo=images"
+                alt="Blog Post 5" class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-white">Building
+                  Responsive Websites with Tailwind CSS</h3>
+                <p class="text-gray-400 mb-4">Tips and tricks for creating
+                  responsive websites using Tailwind CSS.</p>
+                <a href="#" class="text-gold-500 hover:text-gold-700">Read
+                  More</a>
+              </div>
+            </div>
+            <!-- Blog Post 6 -->
+            <div
+              class="bg-gray-900 rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Uk-MBTLEXZEQgJf_Y4D8JwHaEK%26pid%3DApi&f=1&ipt=cffbe55ff7d638c0d5b35ef5f873de8be9ca65ccecaac0bbc9caa5e3f0255b23&ipo=images"
+                alt="Blog Post 6" class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-white">Getting Started
+                  with React Hooks</h3>
+                <p class="text-gray-400 mb-4">An introduction to React Hooks and
+                  how to use them effectively in your projects.</p>
+                <a href="#" class="text-gold-500 hover:text-gold-700">Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter-signup bg-gray-900 rounded-lg p-6 mb-8"
+            style="margin-top: 3%;" data-aos="fade-up" data-aos-delay="10"
+            id="news">
+            <h3 class="text-2xl font-bold text-gold-500 mb-4">Subscribe to our
+              Newsletter</h3>
+            <form id="newsletterForm" action="https://api.web3forms.com/submit"
+              method="POST">
+              <input type="hidden" name="access_key"
+                value="077a1a21-a547-40e9-a4dc-c724ec5fa3d9" />
+              <input type="hidden" name="subject" value id="subjectField" />
+              <input type="hidden" name="from_name" value="Zaid's Portfolio" />
+              <input type="hidden" name="redirect"
+                value="https://zaidcreates.netlify.app/#news" />
+              <input type="email" name="email"
+                class="bg-gray-800 text-white p-2 rounded mb-4 w-full"
+                placeholder="Your Email" required />
+              <button type="submit"
+                class="bg-gold-500 hover:bg-gold-700 text-gray-300 py-2 px-4 rounded">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-container bg-black text-daa520">
+        <h2 class="section-title">Get connected with me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST"
+          class="contact-form">
+          <input type="hidden" name="access_key"
+            value="077a1a21-a547-40e9-a4dc-c724ec5fa3d9" />
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
-          <textarea rows="4" name="message" placeholder="Message" required></textarea>
+          <textarea rows="4" name="message" placeholder="Message"
+            required></textarea>
           <button type="submit">Submit</button>
         </form>
       </section>
-  
+
       <!-- Footer -->
       <footer class="bg-black py-6 text-white" id="footer">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <!-- Social Links -->
-          <div class="flex space-x-4 mb-4 md:mb-0"data-aos="fade-up" data-aos-delay="10">
-            <a target="_blank" href="http://discordapp.com/users/1167472525589102645" class="social-link"><i
+          <div class="flex space-x-4 mb-4 md:mb-0" data-aos="fade-up"
+            data-aos-delay="10">
+            <a target="_blank"
+              href="http://discordapp.com/users/1167472525589102645"
+              class="social-link"><i
                 class="fab fa-discord"></i></a>
-            <a target="_blank" href="https://instagram.com/zaid_suuiii" class="social-link"><i
+            <a target="_blank" href="https://instagram.com/zaid_suuiii"
+              class="social-link"><i
                 class="fab fa-instagram"></i></a>
-            <a target="_blank" href="mailto:engineering.zaidrakhange@gmail.com" class="social-link"><i
+            <a target="_blank" href="mailto:engineering.zaidrakhange@gmail.com"
+              class="social-link"><i
                 class="far fa-envelope"></i></a>
-            <a target="_blank" href="https://linkedin/zaidrakhange" class="social-link"><i
+            <a target="_blank" href="https://linkedin/zaidrakhange"
+              class="social-link"><i
                 class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/zaid-commits" class="social-link"><i
+            <a target="_blank" href="https://github.com/zaid-commits"
+              class="social-link"><i
                 class="fab fa-github"></i></a>
           </div>
           <!-- Footer Text -->
@@ -450,11 +834,12 @@
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- Include Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.js"></script>
+      <!-- Include Tailwind CSS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.js"></script>
 
-    <!-- Hamburger Menu -->
-    <script>
+      <!-- Hamburger Menu -->
+      <script>
       // project card handler
       // Add this to your existing JavaScript
 document.addEventListener('DOMContentLoaded', function() {
@@ -560,11 +945,12 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
     </script>
-     
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <script>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
       AOS.init();
     </script>
-</body>
+    </body>
 
-</html>
+  </html>
