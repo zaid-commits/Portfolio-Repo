@@ -49,27 +49,29 @@
           </button>
         </div>
       </nav>
-      <div id="mobile-menu"
-        class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-50">
-        <div class="flex justify-end px-4 py-2">
+      <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 md:hidden">
+        <div class="flex justify-end p-4">
           <button id="toggle-menu-close" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current text-3B82F6" viewBox="0 0 24 24">
+            <svg class="h-8 w-8 text-white" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
-                d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z" />
+                    d="M13.41 12l5.3-5.29a1 1 0 0 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.3a1 1 0 1 0 1.42 1.42l5.29-5.3 5.3 5.29a1 1 0 1 0 1.42-1.42l-5.3-5.29z" />
             </svg>
           </button>
-          <div class="px-4 pt-4 pb-8 space-y-2 sm:px-6">
-            <a href="#hero" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#work-experience" class="nav-link">Experience</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#accreditations" class="nav-link">Accreditations</a>
-            <a href="#blog" class="nav-link">Blogs</a>
-            <a href="#contact" class="nav-link">Contact</a>
-          </div>
-        </div></header>
+        </div>
+        <div class="flex flex-col items-center justify-center space-y-4 py-8">
+          <a href="#hero" class="nav-link text-white text-lg bg-gray-900 py-2 px-4 rounded hover:bg-gray-700">Home</a>
+          <a href="#about" class="nav-link text-white text-lg py-2 px-4 bg-gray-900 rounded hover:bg-gray-700">About</a>
+          <a href="#skills" class="nav-link text-white text-lg py-2 px-4 bg-gray-900 rounded hover:bg-gray-700">Skills</a>
+          <a href="#projects" class="nav-link text-white text-lg py-2 px-4 bg-gray-900 rounded hover:bg-gray-700">Projects</a>
+          <a href="#work-experience" class="nav-link text-white text-lg py-2 bg-gray-900 px-4 rounded hover:bg-gray-700">Experience</a>
+          <a href="#services" class="nav-link text-white text-lg py-2 px-4 bg-gray-900 rounded hover:bg-gray-700">Services</a>
+          <a href="#accreditations" class="nav-link text-white text-lg py-2 bg-gray-900 px-4 rounded hover:bg-gray-700">Accreditations</a>
+          <a href="#blog" class="nav-link text-white text-lg py-2 bg-gray-900 px-4 rounded hover:bg-gray-700">Blogs</a>
+          <a href="#contact" class="nav-link text-white text-lg py-2 bg-gray-900 px-4 rounded hover:bg-gray-700">Contact</a>
+        </div>
+      </div>
+
+      </header>
       <!-- Hero Section -->
       <section class="hero" id="hero">
         <div class="hero-content">
@@ -850,6 +852,21 @@
       <script
         src="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.js"></script>
 
+        <script>
+          // Function to toggle the mobile menu visibility
+          function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+          }
+        
+          // Close button functionality
+          document.getElementById('toggle-menu-close').addEventListener('click', toggleMobileMenu);
+        
+          // Add click event listeners to all nav links to close the mobile menu on click
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+          });
+        </script>
       <!-- Hamburger Menu -->
       <script>
       // scroll to top button
