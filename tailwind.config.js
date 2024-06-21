@@ -1,23 +1,22 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'gradient-x': 'gradient-x 15s ease infinite',
+      },
+      keyframes: {
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+      },
+    },
   },
-  plugins: [],
-}
-
-// tailwind.config.js
-module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    require('@shadcn/ui')
-  ],
-}
+  // ... other config
+};
