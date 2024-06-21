@@ -803,6 +803,8 @@
           <button type="submit">Submit</button>
         </form>
       </section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button> 
+      
 
       <!-- Footer -->
       <footer class="bg-black py-6 text-white" id="footer">
@@ -840,7 +842,25 @@
 
       <!-- Hamburger Menu -->
       <script>
-      // project card handler
+      // scroll to top button
+      let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
       // Add this to your existing JavaScript
 document.addEventListener('DOMContentLoaded', function() {
   const categorySelect = document.getElementById('project-category');
