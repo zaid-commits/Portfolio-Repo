@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Volleyball Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Inter';
+            font-weight: 500;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fade-in 1s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <a href="#" class="text-xl font-bold text-white">My olleyball Journey</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#journey" class="text-white hover:text-blue-400">Journey</a>
+                    <a href="#achievements" class="text-white hover:text-blue-400">Achievements</a>
+                    <a href="#blog" class="text-white hover:text-blue-400">Blog</a>
+                    <a href="#gallery" class="text-white hover:text-blue-400">Gallery</a>
+                    <a href="#contact" class="text-white hover:text-blue-400">Contact</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="Images/vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-white">
+                My Volleyball Journey
+            </h1>
+            <p class="text-xl sm:text-2xl mb-8 text-blue-200">Passion, Perseverance, and Personal Growth</p>
+            <a href="#journey" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-full transition duration-300 hover:bg-blue-700">
+                Explore My Journey
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Journey Overview -->
+        <section id="journey" class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                My Volleyball Journey
+            </h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <p class="text-lg mb-4">My volleyball journey began in high school when I first stepped onto the court. Little did I know that this sport would become a defining part of my life, shaping my character and leading me to incredible achievements.</p>
+                <p class="text-lg mb-4">From local tournaments to state championships, every match has been a learning experience. The thrill of a perfect serve, the satisfaction of a well-executed spike, and the camaraderie with teammates have fueled my passion for volleyball.</p>
+                <p class="text-lg">Through ups and downs, victories and defeats, I've grown not just as a player, but as a person. Volleyball has taught me the value of teamwork, perseverance, and pushing beyond my limits.</p>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section id="achievements" class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Volleyball Triumphs
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-400">State Level Player</h3>
+                    </div>
+                    <p class="text-gray-300">Qualified for state level Volleyball championship in IDESSA competition.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-purple-400">Zonal Champion</h3>
+                    </div>
+                    <p class="text-gray-300">A1 Zonal Level Volleyball Champion, representing college in multiple tournaments.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-indigo-400">InterCollege Champion</h3>
+                    </div>
+                    <p class="text-gray-300">Won the Intercollegiate Zonal Championship held at Asangaon.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts -->
+        <section id="blog" class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Volleyball Diaries
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <img src="match-day.jpg" alt="Match Day" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-400">Match Day Memories</h3>
+                        <p class="text-gray-300 mb-4">The excitement, the nerves, the team huddle - every match day is an adventure. Here's a look into my pre-game routine and how I prepare mentally and physically for big games.</p>
+                        <a href="#" class="text-blue-400 hover:underline">Read more</a>
+                    </div>
+                </article>
+                <article class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <img src="training.jpg" alt="Training Session" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-400">The Grind: Training Days</h3>
+                        <p class="text-gray-300 mb-4">Behind every successful match is hours of intense training. Dive into my training regimen, from strength conditioning to perfecting that jump serve.</p>
+                        <a href="#" class="text-purple-400 hover:underline">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Moments Captured
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="Images/old.jpg" alt="Gallery Image 1" class="w-full h-48 object-cover rounded-lg">
+                <img src="Images/part.jpg" alt="Gallery Image 2" class="w-full h-48 object-cover rounded-lg">
+                <img src="Images/img1.jpg" alt="Gallery Image 3" class="w-full h-48 object-cover rounded-lg">
+                <img src="Images/img2.jpg" alt="Gallery Image 4" class="w-full h-48 object-cover rounded-lg">
+            </div>
+        </section>
+
+        <!-- Video Showcase -->
+        <section class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Career Highlights
+            </h2>
+            <div class="relative aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button id="playBtn" class="w-16 h-16 bg-white rounded-full flex items-center justify-center transition duration-300 hover:bg-blue-500 group">
+                        <svg class="w-8 h-8 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="videoContainer" class="hidden absolute inset-0">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L7Vucx_w1E4 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Skills -->
+        <section class="mb-16 fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                My Volleyball Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-400">Offensive Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-32">Spiking</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 rounded-full h-2" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32">Serving</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 rounded-full h-2" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32">Setting</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 rounded-full h-2" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-400">Defensive Skills</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="w-32">Blocking</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-500 rounded-full h-2" style="width: 88%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32">Digging</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-500 rounded-full h-2" style="width: 82%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-32">Positioning</span>
+                            <div class="flex-1 bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-500 rounded-full h-2" style="width: 92%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Goals -->
+        <section class="text-center fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Looking Ahead
+            </h2>
+            <p class="text-xl mb-8">My journey in volleyball continues. I'm excited to take on new challenges and reach even greater heights in the sport I love.</p><div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-400">Future Goals</h3>
+                <ul class="list-disc list-inside text-left space-y-2">
+                    <li>Compete in national-level tournaments</li>
+                    <li>Improve my vertical jump by 3 inches</li>
+                    <li>Master the jump serve technique</li>
+                    <li>Mentor young volleyball players in my community</li>
+                    <li>Pursue opportunities to play volleyball professionally</li>
+                </ul>
+            </div>
+            <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full transition duration-300 hover:from-blue-600 hover:to-purple-700">
+                Get in Touch
+            </a>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Get in Touch
+            </h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-300 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-300 mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-300 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-400 mb-4">&copy; 2024 My Volleyball Journey. All rights reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const fadeElems = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        fadeElems.forEach(elem => observer.observe(elem));
+
+        // Video player functionality
+        const playBtn = document.getElementById('playBtn');
+        const videoContainer = document.getElementById('videoContainer');
+        playBtn.addEventListener('click', () => {
+            playBtn.style.display = 'none';
+            videoContainer.style.display = 'block';
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('nav button');
+        const mobileMenu = document.querySelector('nav .hidden');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('right-0');
+            mobileMenu.classList.toggle('bg-gray-800');
+            mobileMenu.classList.toggle('p-4');
+        });
+    </script>
+</body>
+</html>
