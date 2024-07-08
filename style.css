@@ -118,7 +118,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('Images/perfect-background.jpeg');
+    /* background-image: url('Images/perfect-background.jpeg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -608,7 +608,12 @@ font-size: large;
     opacity: 0.7;
 }
 
-
+/* background animation */
+/* @media (max-width: 768px) {
+  #animated-bg {
+    display: none;
+  }
+} */
 
 /* internship card styles */
 @keyframes float {
