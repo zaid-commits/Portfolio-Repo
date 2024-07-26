@@ -92,14 +92,14 @@
     transition: background-color 0.3s ease;
   }
 
-  a:hover {
+  /* a:hover {
     color: #3B82F6;
   }
 
   a:hover::after {
     background-color: #3B82F6;
     animation: underline 0.5s forwards;
-  }
+  } */
 
   @keyframes underline {
     0% {
@@ -160,16 +160,16 @@
   .hero-content a {
     font-size: 1rem;
     padding: 1rem 2rem;
-    background-color: #3B82F6;
+    /* background-color: #3B82F6; */
     color: #fff;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
     margin: 0.5rem;
   }
 
-  .hero-content a:hover {
+  /* .hero-content a:hover {
     background-color: #2563EB;
-  }
+  } */
 
   /* Section Styles */
   .section-title {
