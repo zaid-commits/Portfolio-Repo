@@ -1,8 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Luckiest+Guy&family=Rubik+Bubbles&display=swap');
-
-/* Refactored Stylesheet */
-   /* Smooth Scroll */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Rubik+Bubbles&display=swap');
    html {
     scroll-behavior: smooth;
   }
@@ -176,22 +173,17 @@
 
   /* Section Styles */
   .section-title {
-
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
-
-    font-size: 4rem;
-    font-weight: 600;
+    font-family: "Luckiest Guy", cursive;
+    font-weight:bolder;
+   font-style: normal;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
     color: #a3a7af;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    color:#EAF7FF;
+
   }
 
   /* .abouthead{
@@ -576,13 +568,7 @@ font-size: large;
 }
 
 #more{
-  font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
+  
 }
 
 #more:hover{
