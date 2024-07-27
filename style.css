@@ -327,14 +327,14 @@ transition: border-color 0.3s ease;
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-border-color: #3B82F6;
+border-color: #a3a7af;
 outline: none;
 }
 
 .contact-form button {
 font-size: 1rem;
 padding: 1rem 2rem;
-background-color: #3B82F6;
+background-color: none;
 color: #fff;
 border-radius: 0.5rem;
 transition: background-color 0.3s ease;
@@ -342,7 +342,7 @@ cursor: pointer;
 }
 
 .contact-form button:hover {
-background-color: #2563EB;
+background-color: #a3a7af;
 }
 
 /* Footer */
