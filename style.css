@@ -12,7 +12,7 @@
 #project-category {
   width: 200px;
   padding: 0.5rem;
-  border: 1px solid #3B82F6;
+  border: 1px solid #a3a7af;
   border-radius: 0.25rem;
   background-color: #1F2937;
   color: #fff;
@@ -22,11 +22,11 @@
 
 #project-category:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 0 2px rgba(65, 65, 66, 0.5);
 }
 .project-card {
   background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-  border: 1px solid #3B82F6;
+  border: 1px solid #a3a7af;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -37,7 +37,7 @@
 }
 
 .project-card h3 {
-  color: #3B82F6;
+  color: #e8e9eb;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -262,7 +262,7 @@
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-    border: 2px solid #3B82F6;
+    border: 2px solid #a3a7af;
     margin-bottom: 2rem;
   }
 
@@ -305,7 +305,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color:#3B82F6;
+    color:#a3a7af;
   }
   .project-card .overlay p {
 font-size: 1rem;
@@ -584,9 +584,11 @@ font-size: large;
       "MORF" 15,
       "SHLN" 50;
 }
+
 #more:hover{
   /* color:cornflowerblue; */
 }
+
 /* scroll to top button */
 #myBtn {
   font-weight: 500;
