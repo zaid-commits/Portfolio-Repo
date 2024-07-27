@@ -576,10 +576,16 @@ font-size: large;
 }
 
 #more{
-  color:#3B82F6;
+  font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
 }
 #more:hover{
-  color:cornflowerblue;
+  /* color:cornflowerblue; */
 }
 /* scroll to top button */
 #myBtn {
