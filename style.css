@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Rubik+Bubbles&display=swap');
+
    html {
     scroll-behavior: smooth;
   }
@@ -64,6 +65,7 @@
 }
   /* Base Styles */
   body {
+    
     font-family: 'Inter';
     font-weight: 500;
     background-color: #000;
@@ -207,7 +209,7 @@
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #ccc;
+    color: #a3a7af;
   }
 
   .about-image {
@@ -424,13 +426,13 @@ animation-fill-mode: both;
 
 /* Footer Styles */
 .social-link {
-color: #fff;
+color: #a3a7af;
 font-size: 1.5rem;
 transition: color 0.3s;
 }
 
 .social-link:hover {
-color: #3B82F6;
+color: #fff;
 }
 
 /* Hamburger Menu Styles */
@@ -472,7 +474,7 @@ transform: translateY(0);
 #mobile-menu a {
 display: block;
 padding: 1rem 1.5rem;
-color: #fff;
+color: #a3a7af;
 /* White text color */
 text-decoration: none;
 transition: background-color 0.3s ease;
@@ -480,7 +482,7 @@ transition: background-color 0.3s ease;
 
 #mobile-menu a:hover {
 background-color: rgba(255, 255, 255, 0.2);
-/* Semi-transparent white background color on hover */
+
 }
 
 #mobile-menu button {
@@ -498,10 +500,11 @@ outline: none;
 /* active marker */
 .nav-link {
 transition: color 0.3s ease;
+color: #a3a7af;
 }
 
 .nav-link.active {
-color: #3B82F6;
+color: #fff;
 /* Blue color for active state */
 font-size: large;
 
@@ -528,51 +531,16 @@ font-size: large;
 
   
 }
-.border-animation {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.5rem;
-}
 
-.border-animation::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, #3B82F6, #2563EB, #3B82F6);
-  animation: border-rotate 4s linear infinite;
-  z-index: -1;
-}
 
-.border-animation::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  right: 4px;
-  bottom: 4px;
-  background: #000;
-  border-radius: 0.5rem;
-  z-index: -1;
-}
 
-@keyframes border-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 #more{
-  
+  color:#9c9da0e3;
 }
 
 #more:hover{
-  /* color:cornflowerblue; */
+color: white;
 }
 
 /* scroll to top button */
@@ -618,6 +586,7 @@ font-size: large;
     left: 0;
     right: 0;
     bottom: 0;
+    
     /* background: linear-gradient(45deg, #3b82f6, #8b5cf6); */
     z-index: -1;
     filter: blur(20px);
@@ -649,22 +618,6 @@ font-size: large;
 }
 .fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
 
-.experience-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background: linear-gradient(45deg, #3b82f6, #8b5cf6); */
-    z-index: -1;
-    filter: blur(20px);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.experience-card:hover::before {
-    opacity: 0.7;
-}
 
 
 /* hero buttons */
