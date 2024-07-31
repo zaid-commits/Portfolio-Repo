@@ -163,6 +163,7 @@
   .hero-content a {
     font-size: 1rem;
     padding: 1rem 2rem;
+    /* background-color: #3B82F6; */
     color: #fff;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
@@ -187,6 +188,7 @@
     color:#EAF7FF;
 
   }
+  
 
 
   .section-container {
