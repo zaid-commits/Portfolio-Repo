@@ -18,8 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
 
-<body >
- 
+<body class="relative h-screen">
+  <div id="cursor"></div>
   <canvas id="animated-bg" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
   <header class="py-6 fixed w-full z-10 bg-black">
     <nav class="flex justify-between items-center">
@@ -764,6 +764,16 @@
       <p class="text-sm">&copy; Zaid Rakhange. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- Include Tailwind CSS -->
