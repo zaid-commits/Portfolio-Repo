@@ -72,10 +72,10 @@ export const timeline = [
     year: 2020,
     events: [
       {
-        title: "",
-        subTitle: "",
-        icon: "",
-        type: "",
+        title: "Masters in Computer Applications",
+        subTitle: "Uttarakhand University",
+        icon: "BackpackIcon",
+        type: "education",
       },
     ],
   },
@@ -83,10 +83,10 @@ export const timeline = [
     year: 2017,
     events: [
       {
-        title: "",
-        subTitle: "",
-        icon: "",
-        type: "",
+        title: "Bachelors in Computer Applications",
+        subTitle: "Amrapali Institute of Technology and Sciences",
+        icon: "BackpackIcon",
+        type: "education",
       },
     ],
   },
@@ -94,10 +94,10 @@ export const timeline = [
     year: 2016,
     events: [
       {
-        title: "",
-        subTitle: "",
-        icon: "",
-        type: "",
+        title: "Senior Secondary",
+        subTitle: "St. Theresa Senior Secondary School",
+        icon: "BackpackIcon",
+        type: "education",
       },
     ],
   },
