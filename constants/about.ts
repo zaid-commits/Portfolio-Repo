@@ -57,14 +57,14 @@ export const timeline = [
     year: 2022,
     events: [
       {
-        title: "Frontend Developer(2.10yrs+)",
-        subTitle: "Soft Prodigy",
-        icon: "DesktopIcon",
+        title: "",
+        subTitle: "",
+        icon: "",
       },
       {
-        title: "Internship - ReactJS",
-        subTitle: "Soft Prodigy",
-        icon: "DesktopIcon",
+        title: "",
+        subTitle: "",
+        icon: "",
       },
     ],
   },
@@ -72,10 +72,10 @@ export const timeline = [
     year: 2020,
     events: [
       {
-        title: "Masters in Computer Applications",
-        subTitle: "Uttarakhand University",
-        icon: "BackpackIcon",
-        type: "education",
+        title: "",
+        subTitle: "",
+        icon: "",
+        type: "",
       },
     ],
   },
@@ -83,10 +83,10 @@ export const timeline = [
     year: 2017,
     events: [
       {
-        title: "Bachelors in Computer Applications",
-        subTitle: "Amrapali Institute of Technology and Sciences",
-        icon: "BackpackIcon",
-        type: "education",
+        title: "",
+        subTitle: "",
+        icon: "",
+        type: "",
       },
     ],
   },
@@ -94,10 +94,10 @@ export const timeline = [
     year: 2016,
     events: [
       {
-        title: "Senior Secondary",
-        subTitle: "St. Theresa Senior Secondary School",
-        icon: "BackpackIcon",
-        type: "education",
+        title: "",
+        subTitle: "",
+        icon: "",
+        type: "",
       },
     ],
   },
